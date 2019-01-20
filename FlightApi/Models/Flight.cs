@@ -8,7 +8,7 @@ namespace FlightApi.Models
 {
     public class Flight
     {
-        [Key]
+        [Key] // [Key] og andre notations skal ikke med over i proxy delen
         public int FlightId { get; set; }
         public string AircraftType { get; set; }
         public string FromLocation { get; set; }
@@ -18,7 +18,7 @@ namespace FlightApi.Models
         public DateTime ArrivalTime { get; set; }
 
 
-        //til concurrency
+        //til concurrency           SKAL IKKE MED OVER I PROXY DELEN
         //[Timestamp]
         //public byte[] RowVersion { get; set; }
 
