@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightApi", "FlightApi\FlightApi.csproj", "{8A81D1EA-DBBD-4CF5-A9D5-584AA5CEFBFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightMvc", "FlightMvc\FlightMvc.csproj", "{F90061BC-B652-47BB-92A3-579D7446F74C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A81D1EA-DBBD-4CF5-A9D5-584AA5CEFBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A81D1EA-DBBD-4CF5-A9D5-584AA5CEFBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A81D1EA-DBBD-4CF5-A9D5-584AA5CEFBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A81D1EA-DBBD-4CF5-A9D5-584AA5CEFBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90061BC-B652-47BB-92A3-579D7446F74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90061BC-B652-47BB-92A3-579D7446F74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90061BC-B652-47BB-92A3-579D7446F74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90061BC-B652-47BB-92A3-579D7446F74C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AA41B5F-27C5-417A-8FA4-9B5443B57841}
+	EndGlobalSection
+EndGlobal

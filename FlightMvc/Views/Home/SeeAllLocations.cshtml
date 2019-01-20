@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FlightMvc.Models.FlightProxy>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AircraftType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FromLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartureTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArrivalTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>*@
+<br />
+@foreach (var item in Model)
+{
+
+    @Html.DisplayFor(modelItem => item.FromLocation)
+    <br />
+
+    @Html.DisplayFor(modelItem => item.ToLocation)
+    <br />
+}
+
+<div>
+    <br />
+    <a asp-action="Index">Back to flights</a>
+</div>

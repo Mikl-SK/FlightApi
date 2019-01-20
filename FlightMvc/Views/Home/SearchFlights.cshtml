@@ -1,0 +1,32 @@
+﻿@model FlightMvc.Models.FlightProxy
+
+<h4>FlightProxy</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SearchFlights"> 
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FromLocation" class="control-label"></label>
+                <input asp-for="FromLocation" class="form-control" />
+                <span asp-validation-for="FromLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ToLocation" class="control-label"></label>
+                <input asp-for="ToLocation" class="form-control" />
+                <span asp-validation-for="ToLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-action="SearchFlightsAction" type="submit" value="See Flight" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to flights</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
