@@ -7,6 +7,7 @@ namespace FlightMvc.Models
 {
     public class FlightProxy
     {
+        //[Required] skal være på alle props, hvis det er krævet at der skal kunne laves et nyt fly i selve opgaven
         public int FlightId { get; set; }
         public string AircraftType { get; set; }
         public string FromLocation { get; set; }
