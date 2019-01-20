@@ -24,7 +24,7 @@ namespace FlightMvc.Controllers
         public async Task<IActionResult> Index()
         {
             var client = GetClient();
-            HttpResponseMessage response = await client.GetAsync($@"api/Flights/AllFlights");
+            HttpResponseMessage response = await client.GetAsync($@"api/Flights/AllFlights"); 
 
             if (response.IsSuccessStatusCode)
             {
@@ -44,6 +44,7 @@ namespace FlightMvc.Controllers
             return View();
         }
 
+        //[ValidateAntiForgeryToken] for at sikre mod XSS
         public async Task<IActionResult> EditFlights(int id)
         {
             var client = GetClient();
